@@ -31,10 +31,11 @@ pipeline {
                 sh 'terraform apply -auto-approve'
             }
         }
-        stage('Terraform output') {
+         stage('Terraform Output') {
             steps {
                 sh 'terraform output'
             }
+        }
     }
 
     post {
